@@ -12,6 +12,12 @@ class MainPresenter(private val view: MainContract.View) : MainContract.Presente
 
     override fun getItems() {
         view.showLoading()
+
+        //Using Dummy Data until data arrives
+        val dummyData = listOf("First", "Second", "Third")
+        view.showItems(dummyData)
+
+
         val retrofitClient = RetrofitClient()
         retrofitClient.apiService.getRadiusResponse().enqueue(object : Callback<Item> {
             override fun onResponse(call: Call<Item>, response: Response<Item>) {

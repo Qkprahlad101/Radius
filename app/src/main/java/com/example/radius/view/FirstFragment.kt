@@ -10,11 +10,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.radius.contract.MainContract
 import com.example.radius.presenter.MainPresenter
 import com.example.radius.databinding.FragmentFirstBinding
+import com.example.radius.model.HomeViewModel
 
 class FirstFragment : Fragment(), MainContract.View {
 
     private lateinit var binding: FragmentFirstBinding
     private lateinit var presenter: MainPresenter
+//    private val viewModel: HomeViewModel by activityViewModels()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentFirstBinding.inflate(inflater, container, false)
