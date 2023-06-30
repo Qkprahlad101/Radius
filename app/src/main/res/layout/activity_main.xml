@@ -18,7 +18,8 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintDimensionRatio="16:4"/>
+                app:layout_constraintDimensionRatio="16:4"
+                android:background="@color/purple_200"/>
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/view_pager"

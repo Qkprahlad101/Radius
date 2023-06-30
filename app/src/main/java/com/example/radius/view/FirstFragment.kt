@@ -25,7 +25,7 @@ class FirstFragment : Fragment(), MainContract.View {
     }
 
     override fun showItems(items: List<String>) {
-        val adapter = ItemAdapter(items.take(5))
+        val adapter = ItemAdapter(items)
         binding.recyclerView.adapter = adapter
     }
 
